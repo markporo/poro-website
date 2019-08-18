@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e806898b0.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>About</title>
+</head>
+
+<body>
+    <!-- Nav and Band Name  -->
+    <!-- Hamburger icon -->
+    <div class="hamburgerNav">
+        <label for="toggle" class="hamburgerSVG">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="3" />
+                <path d="M0,14 30,14" stroke="#000" stroke-width="3" />
+                <path d="M0,23 30,23" stroke="#000" stroke-width="3" />
+            </svg>
+        </label>
+        <input type="checkbox" id="toggle" />
+
+
+        <!-- Slide Menu - Activated by svg hamburger -->
+        <div id="side-menu">
+            <a href="index.html">home</a>
+            <a href="index.html#tour">tour</a>
+            <a href="index.html#music">music</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="#">merch</a>
+        </div>
+
+    </div>
+
+    <h1>poro</h1>
+
+    <!-- monster logo -->
+    <div class="monsterLogo">
+        <a href="index.html">
+            <img src="images/monsterLogo.png" alt="poro monster logo" id="poroLogo">
+        </a>
+    </div>
+
+    <nav class="navbar">
+
+
+        <!-- Main Nav - when full screen -->
+        <ul class="navbar-nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html#tour">tour</a></li>
+            <li><a href="index.html#music">music</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">merch</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <!-- ABOUT -->
+    <h2 class="h2About">ABOUT</h2>
+    <div class="aboutSection">
+        <img src="images/1.jpg" alt="Poro Photo" class="AboutPhoto">
+        <p>
+            Poro, meaning “good friend” in Pidgin (Tok Pisin), is a musical project based out of Cleveland, Ohio
+            consisting of members Mark Porostosky (present multi-instrumentalist in The Lighthouse and the Whaler), Ryan
+            Walker (fellow TLATW member), and Susan Ulle. Together the band creates an eclectic Indie Pop sound drawing
+            influences from the likes of Sufjan Stevens, Phoenix and Copeland, with a sincere melodic flair all their
+            own.
+            In 2016, after six years of writing and touring with TLATW, Mark began creating Poro with material and
+            concepts he had been writing. In early 2017 Treat Yourself was released with the support of former drummer
+            Thomas Ulle and fellow TLATW member Ryan Walker. The lyrically themed self-confidence EP was later named one
+            of the “15 Best Cleveland Album and EP releases of the year” (Cleveland.com). The success of Treat Yourself
+            continued in 2018 as “Embrace,” the album’s most orchestral and anthemic song, was used in the 42nd
+            Cleveland International Film Festival’s trailer; for which Poro also performed at the festival’s closing
+            ceremony.
+            In August of 2018, the band released the Eyes EP, a reflection on different perspectives. In 2019, the band
+            plans to continue to perform shows around the schedule of their brother band TLATW as well as record their
+            first full length record.
+        </p>
+
+    </div>
+
+
+
+    <!-- Email signup direct to mailerlite/ social links -->
+    <div id="footer">
+        <div id="emailSignupForm">
+            <!-- MailerLite Email -->
+            <div class="ml-form-embed" data-account="1359488:a1g0c2i4q5" data-form="1448396:m2w2p9">
+            </div>
+        </div>
+
+         <!-- Social Links -->
+         <div id="socials">
+                <!-- instagram -->
+                <div class="social-links">
+                   <a href="https://www.instagram.com/poromusic"> <i class="fab fa-instagram"></i></a>
+                </div>
+                <!-- facebook -->
+                <div class="social-links">
+                        <a href="https://www.facebook.com/poromusic"><i class="fab fa-facebook"></i></a>
+                </div>
+                <!-- twitter -->
+                <div class="social-links">
+                        <a href="https://www.twitter.com/poromusic"><i class="fab fa-twitter"></i></a>
+                </div>
+                <!-- spotify -->
+                <div class="social-links">
+                    <a href="https://open.spotify.com/artist/5oxkE3MdqnnoDfmUVbXZiN"><i class="fab fa-spotify"></i></a>
+                </div>
+    
+            </div>
+
+        <!-- MailerLite Universal -->
+        <script>
+            (function (m, a, i, l, e, r) {
+            m['MailerLiteObject'] = e; function f() {
+                var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+            }
+                f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+                var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+                _.parentNode.insertBefore(r, _);
+            })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+            var ml_account = ml('accounts', '1359488', 'a1g0c2i4q5', 'load');
+        </script>
+        <!-- End MailerLite Universal -->
+
+        <script src="index.js"></script>
+</body>
+
+</html>

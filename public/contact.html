@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e806898b0.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Poro</title>
+</head>
+
+<body>
+    <!-- Nav and Band Name  -->
+    <!-- Hamburger icon -->
+    <div class="hamburgerNav">
+        <label for="toggle" class="hamburgerSVG">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="3" />
+                <path d="M0,14 30,14" stroke="#000" stroke-width="3" />
+                <path d="M0,23 30,23" stroke="#000" stroke-width="3" />
+            </svg>
+        </label>
+        <input type="checkbox" id="toggle" />
+
+
+        <!-- Slide Menu - Activated by svg hamburger -->
+        <div id="side-menu">
+            <a href="index.html">home</a>
+            <a href="index.html#tour">tour</a>
+            <a href="index.html#music">music</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="#">merch</a>
+        </div>
+
+    </div>
+
+    <h1>poro</h1>
+
+    <!-- monster logo -->
+    <div class="monsterLogo">
+        <a href="index.html">
+            <img src="images/monsterLogo.png" alt="poro monster logo" id="poroLogo">
+        </a>
+    </div>
+
+    <nav class="navbar">
+
+
+        <!-- Main Nav - when full screen -->
+        <ul class="navbar-nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index.html#tour">tour</a></li>
+            <li><a href="index.html#music">music</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">merch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact -->
+    <h2 class="h2Contact">CONTACT</h2>
+    {{msg}}
+    <div class="contactForm">
+        <form action="send" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="nameDiv">
+
+
+                <div class="names">
+                    <h3>Name</h3><br>
+                    <input type="text" name="fname"><br>
+                    <p>First Name</p>
+                </div>
+                <div class="names">
+                    <input type="text" name="lname"><br>
+                    <p>Last Name</p>
+                </div>
+
+            </div>
+            <h3> Email Address</h3><br>
+            <input type="text" name="email"><br>
+            <h3> Message</h3><br>
+            <textarea rows="30" cols="50" name="comment" form="usrform">Enter text here...</textarea><br><br>
+            <input class="submitbtn" type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <!-- Email signup direct to mailerlite/ social links -->
+    <div id="footer">
+        <div id="emailSignupForm">
+            <!-- MailerLite Email -->
+            <div class="ml-form-embed" data-account="1359488:a1g0c2i4q5" data-form="1448396:m2w2p9">
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div id="socials">
+                <!-- instagram -->
+                <div class="social-links">
+                   <a href="https://www.instagram.com/poromusic"> <i class="fab fa-instagram"></i></a>
+                </div>
+                <!-- facebook -->
+                <div class="social-links">
+                        <a href="https://www.facebook.com/poromusic"><i class="fab fa-facebook"></i></a>
+                </div>
+                <!-- twitter -->
+                <div class="social-links">
+                        <a href="https://www.twitter.com/poromusic"><i class="fab fa-twitter"></i></a>
+                </div>
+                <!-- spotify -->
+                <div class="social-links">
+                    <a href="https://open.spotify.com/artist/5oxkE3MdqnnoDfmUVbXZiN"><i class="fab fa-spotify"></i></a>
+                </div>
+    
+            </div>
+
+        <!-- MailerLite Universal -->
+        <script>
+            (function (m, a, i, l, e, r) {
+            m['MailerLiteObject'] = e; function f() {
+                var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+            }
+                f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+                var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+                _.parentNode.insertBefore(r, _);
+            })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+            var ml_account = ml('accounts', '1359488', 'a1g0c2i4q5', 'load');
+        </script>
+        <!-- End MailerLite Universal -->
+        <script src="index.js"></script>
+</body>
+
+</html>

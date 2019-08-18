@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3e806898b0.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Poro Music</title>
+</head>
+
+<body>
+    <!-- Nav and Band Name  -->
+    <!-- Hamburger icon -->
+    <div class="hamburgerNav">
+        <label for="toggle" class="hamburgerSVG">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="3" />
+                <path d="M0,14 30,14" stroke="#000" stroke-width="3" />
+                <path d="M0,23 30,23" stroke="#000" stroke-width="3" />
+            </svg>
+        </label>
+        <input type="checkbox" id="toggle" />
+
+
+        <!-- Slide Menu - Activated by svg hamburger -->
+        <div id="side-menu">
+            <a href="index.html">home</a>
+            <a id="tourLink" href="#tour">tour</a>
+            <a id="musicLink" href="#music">music</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="#">merch</a>
+        </div>
+
+    </div>
+
+    <h1>poro</h1>
+
+    <!-- monster logo -->
+    <div class="monsterLogo">
+        <a href="index.html">
+            <img src="images/monsterLogo.png" alt="poro monster logo" id="poroLogo">
+        </a>
+    </div>
+
+    <nav class="navbar">
+
+
+        <!-- Main Nav - when full screen -->
+        <ul class="navbar-nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#tour">tour</a></li>
+            <li><a href="#music">music</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">merch</a></li>
+        </ul>
+    </nav>
+
+    <content>
+        <!-- Album Out -->
+        <div>
+                <a href="https://song.link/album/i/1414662888"><img class="newAlbum" src="images/eyes.jpg" alt="Eyes Album image"></a>
+        </div>
+        <section>
+            <h2 class="h2OutNow">EYES is OUT NOW!</h2>
+            <div><a href="https://song.link/album/i/1414662888"><button>Listen Here</button></a></div>
+        </section>
+
+        <!-- Photo slide -->
+        <slider class="slider">
+            <span id="slider-img-10"></span>
+            <span id="slider-img-6"></span>
+            <span id="slider-img-2"></span>
+            <span id="slider-img-12"></span>
+            <span id="slider-img-11"></span>
+            <span id="slider-img-4"></span>
+            <span id="slider-img-5"></span>
+            <span id="slider-img-8"></span>
+
+            <div class="img-container">
+                <img src="images/10.jpg" alt="" class="slider-img">
+                <img src="images/6.jpg" alt="" class="slider-img">
+                <img src="images/2.jpg" alt="" class="slider-img">
+                <img src="images/12.jpg" alt="" class="slider-img">
+                <img src="images/11.jpg" alt="" class="slider-img">
+                <img src="images/4.jpg" alt="" class="slider-img">
+                <img src="images/5.jpg" alt="" class="slider-img">
+                <img src="images/8.jpg" alt="" class="slider-img">
+            </div>
+            <div class="btn-container">
+                <a href="#slider-img-10" class="slider-btn"></a>
+                <a href="#slider-img-6" class="slider-btn"></a>
+                <a href="#slider-img-2" class="slider-btn"></a>
+                <a href="#slider-img-12" class="slider-btn"></a>
+                <a href="#slider-img-11" class="slider-btn"></a>
+                <a href="#slider-img-4" class="slider-btn"></a>
+                <a href="#slider-img-5" class="slider-btn"></a>
+                <a href="#slider-img-8" class="slider-btn"></a>
+            </div>
+        </slider>
+
+
+        <!-- On Tour -->
+        <div class="Tour" id="tour">
+            <h2 class="h2Tour">ON TOUR</h2>
+            <br>
+            <div class="bandsInTown">
+                <a class="bit-widget-initializer" data-artist-name="poro" data-display-local-dates="true"
+                    data-display-past-dates="false" data-auto-style="false" data-text-color="#000000"
+                    data-link-color="#4d4d4d" data-background-color="rgba(0,0,0,0)" data-display-limit="15"
+                    data-display-start-time="true" data-link-text-color="#FFFFFF" data-display-lineup="false"
+                    data-display-play-my-city="0" data-separator-color="rgba(255, 255, 255, 0.5)"
+                    data-display-logo="false"></a>
+            </div>
+        </div>
+
+        <!-- Music / Listen Links -->
+        <div class="musicListen" id="music">
+            <h2 class="h2Music">LISTEN</h2>
+            <!-- eyes -->
+            <div id="eyes" class="albums">
+                <a href="https://song.link/album/i/1414662888"><img src="images/eyes.jpg" alt="Listen to Eyes" class="albumCovers"></a>
+                <a href="https://song.link/album/i/1414662888"></a><button class="listenButtons">Listen</button></a>
+            </div>
+            <!-- treat yourself -->
+            <div id="ty" class="albums">
+                    <a href="https://song.link/album/i/1196032462"> <img src="images/treat-yourself.jpg" alt="Listen to Treat Yourself" class="albumCovers"></a>
+                <a href="https://song.link/album/i/1196032462"><button class="listenButtons">Listen</button></a>
+            </div>
+            <!-- Work Cover -->
+            <div id="work" class="albums">
+                    <a href="https://song.link/i/1376959120"><img src="images/work.jpg" alt="Listen to Work" class="albumCovers"></a>
+                <a href="https://song.link/i/1376959120"> <button class="listenButtons">Listen</button></a>
+            </div>
+        </div>
+
+        <!-- Embedded Videos -->
+
+        <h2 class="h2Video">VIDEOS</h2>
+        <div class="videos">
+            <div id="iff42" class="vids">
+                <iframe width="80%" max-width="640px" src="https://www.youtube.com/embed/vwdU0zgDq9E" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="sofar" class="vids">
+                <iframe width="80%" max-width="640px" src="https://www.youtube.com/embed/0phMNP9KyTo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </content>
+
+    <!-- Email signup direct to mailerlite/ social links -->
+    <div id="footer">
+        <div id="emailSignupForm">
+            <!-- MailerLite Email -->
+            <div class="ml-form-embed" data-account="1359488:a1g0c2i4q5" data-form="1448396:m2w2p9">
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div id="socials">
+            <!-- instagram -->
+            <div class="social-links">
+               <a href="https://www.instagram.com/poromusic"> <i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- facebook -->
+            <div class="social-links">
+                    <a href="https://www.facebook.com/poromusic"><i class="fab fa-facebook"></i></a>
+            </div>
+            <!-- twitter -->
+            <div class="social-links">
+                    <a href="https://www.twitter.com/poromusic"><i class="fab fa-twitter"></i></a>
+            </div>
+            <!-- spotify -->
+            <div class="social-links">
+                <a href="https://open.spotify.com/artist/5oxkE3MdqnnoDfmUVbXZiN"><i class="fab fa-spotify"></i></a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+    <!-- MailerLite Universal -->
+    <script>
+        (function (m, a, i, l, e, r) {
+        m['MailerLiteObject'] = e; function f() {
+            var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+        }
+            f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
+            var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+            _.parentNode.insertBefore(r, _);
+        })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+        var ml_account = ml('accounts', '1359488', 'a1g0c2i4q5', 'load');
+    </script>
+    <!-- End MailerLite Universal -->
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,610 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poiret One', cursive, "Arial", Serif;
+    text-align: center;
+    background-color: f4f4f4;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    text-decoration-style: none;
+}
+
+/* .EverythingButSideMenu {
+    padding-top: -50px;
+} */
+
+/* Nav */
+
+
+.hamburgerSVG {
+    float: left;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    
+}
+
+.navbar-nav {
+    overflow: hidden;
+    height: 63px;
+}
+
+/* .monsterLogo {
+    position: relative;
+   
+    
+} */
+
+#poroLogo {
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    width: 7%;
+    padding: 10px;
+}
+
+h1{
+    font-size: 28vw;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: -35px;
+    
+
+}
+
+
+li {
+    list-style-type: none;
+    flex-direction: row;
+    /* -ms-flex-align: center; */
+    padding: 0 .65rem  0 .65rem;
+    font-size: 25px;
+    padding-bottom: 5px;
+    
+}
+
+ul {
+    display: inline-flex;
+    padding-inline-start: 0px;
+
+}
+
+.navbar-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    /* background-color: #ddd; */
+    color: rgb(172, 96, 94);
+}
+
+#side-menu {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    clear: both;
+    margin-top: 20px;
+    
+}
+
+#side-menu a {
+    display: block;
+    border-bottom: 2px solid grey;
+    margin: 0;
+    /* padding-bottom: 3px; */
+    font-size: 4rem;
+    color: black;
+    text-decoration: none;
+    
+}
+
+#side-menu a:hover {
+    /* background-color: #ddd; */
+    color: rgb(172, 96, 94);
+}
+
+
+#toggle {
+    display: none; 
+}
+
+/* Album Out */
+.newAlbum {
+    width: 90%;  
+    margin-top: 3px;
+
+}
+
+.h2OutNow {
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: -5px;
+    margin-bottom: 25px;
+    padding: 12px;
+    font-size: 20px;
+    height: 55px;
+    width: 175px;
+    /* background-color: rgb(99, 146, 218); */
+    border: .2px solid black;
+}
+
+
+button:hover {
+    background-color:rgba(88, 88, 88, 0.05);
+}
+
+/* PHOTO SLIDE */
+.slider {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    /* background-color: rgb(35, 111, 134); */
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-container {
+    width: 800%;
+    position: relative;
+    transition: 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}  
+
+.slider-img {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 12.5%;
+}
+
+.btn-container {
+    position: relative;
+    top: -25px;
+}
+
+.slider-btn {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#slider-img-10:target ~ .img-container {
+    left: 0%;
+}
+
+#slider-img-6:target ~ .img-container {
+    left: -100%;
+}
+
+#slider-img-2:target ~ .img-container {
+    left: -200%;
+}
+
+#slider-img-12:target ~ .img-container {
+    left: -300%;
+}
+
+#slider-img-11:target ~ .img-container {
+    left: -400%;
+}
+
+#slider-img-4:target ~ .img-container {
+    left: -500%;
+}
+
+#slider-img-5:target ~ .img-container {
+    left: -600%;
+}
+
+#slider-img-8:target ~ .img-container {
+    left: -700%;
+}
+
+/* ON TOUR */
+.Tour {
+    margin-top: 10px; 
+    height: auto;
+}
+
+.h2Tour {
+    font-size: 2.5rem;
+    margin-top: 10px; 
+    margin-bottom: 15px;
+    
+}
+
+.bandsInTown {
+    margin-top: 10px;
+}
+
+
+/* Music - Listen */
+.musicListen {
+    background-image: url("images/mountainBG.jpg");
+    /* background-color: rgb(50, 65, 61); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin-top: -70px;
+}
+
+.h2Music {
+    font-size: 2.5rem;
+    color: white;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+.albumCovers {
+    width: 82%;
+    padding: 0px 3% 25px 3%;
+    display: block;
+    margin: auto;
+}
+
+.listenButtons {
+    Display: block;
+    width: 50%;
+    height: 2.2rem;
+    padding: 10px 3% 20px 3%;
+    margin: 5px auto 0px auto;  
+    margin-bottom: 65px;
+    font-size: .8rem;  
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+
+}
+
+.listenButtons:hover {
+    background-color: rgb(230, 230, 230, 0.25);
+}
+
+
+.albums {
+    display: inline-block;
+    width: 32%;
+    margin: 0px;
+    padding: 0px; 
+    height: auto; 
+    text-decoration: none;
+}
+
+/* VIDEOS */
+.h2Video {
+    font-size: 2.5rem;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.videos {
+    width: 100%;
+    margin: auto;
+    position: relative;
+	margin-bottom: -15px;
+
+}
+
+#iff42 {
+    position:relative;
+	padding-bottom:56.25%;
+	padding-top:10px;
+	height:0;
+    overflow:hidden;
+    width: 100%;
+    margin-bottom: -30px;
+}
+
+#iff42 iframe {
+	position: absolute;;
+    top: 0;
+    left: 12.5%;
+    margin: 0px auto;
+	width:75%;
+    height:75%;
+    
+}
+
+#sofar {
+    position:relative;
+	padding-bottom:56.25%;
+	padding-top: 0px;
+	height:0;
+    overflow:hidden;
+    width: 100%;
+}
+
+#sofar iframe {
+	position: absolute;;
+    top: 0;
+    left: 12.5%;
+    margin: 0px auto;
+	width:75%;
+    height:75%;
+    
+}
+
+/* FOOTER */
+#footer {
+    display: block;
+    position: static;
+    clear: both;
+    height: 450px; 
+    background-color: rgb(32, 30, 30);
+    color: white;
+}
+
+#emailSignupForm {
+    position: relative;
+    top: 30px;
+}
+
+#socials {
+    margin: auto; 
+    text-align: center;
+}
+
+.social-links {
+    display: inline-block; 
+    margin: 30px 3% 5px 3%;
+    padding: 0px .5%;
+    color: white;
+    font-size: 32px;
+    text-decoration-color: white;
+}
+
+.social-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-decoration-color: white;
+    text-decoration-style: none;
+}
+
+.social-links a:hover {
+    color:  rgb(236, 233, 233, .6);
+}
+
+
+/* Contact Page */
+.h2Contact {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    /* position: relative;
+    left: 0; */
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: -10px;
+    margin-left: 8%;
+}
+
+.names p {
+    text-align: left;
+    margin-top: 2px;
+    font-size: 10px;
+    margin-left: 9%;
+}
+
+.contactForm {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 90px; 
+    margin-top: -50px;
+}
+
+input {
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 85%;
+    font-size: 24px;
+
+}
+
+textarea {
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 85%;
+    font-size: 18px;
+    max-width: 750px;
+    resize: none;
+    height: 150px;
+    
+}
+
+.submitbtn {
+    width: 25%;
+    max-width: 175px; 
+    font-size: 22px;
+    border-radius: 2px; 
+    border-style: double;
+    background-color:white;
+    margin-top: 25px;
+}
+
+.submitbtn:hover {
+    background-color:rgba(88, 88, 88, 0.05);
+}
+
+.nameDiv {
+    width: 100%;
+}
+
+
+
+.names {
+    display: inline-block;
+    width: 45%;
+}
+
+/* About */
+.h2About {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    /* position: relative;
+    left: 0; */
+}
+
+.aboutSection {
+    margin-bottom: 50px;
+    width: 85%;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
+    padding: 5px; 
+    line-height: 35px;
+}
+
+.AboutPhoto {
+    width: 90%;
+    margin: auto; 
+    max-width: 900px;
+}
+
+/* Media Query */
+@media(max-width:568px) {
+    .navbar-nav {
+        display: none;
+
+    }
+#toggle:checked + #side-menu {
+    display: block;
+}
+
+.monsterLogo {
+    display: none;
+}
+
+.AboutPhoto {
+    width: 100%;
+}
+
+.albums {
+    width: 85%;
+}
+
+  /* vids */
+  #iff42 iframe {
+    width:90%;
+    height:90%;
+    left: 5%;
+}
+
+#sofar iframe {
+    width:90%;
+    height:90%;
+    left: 5%;
+}
+
+#iff42 {
+    margin-bottom: 15px;
+}
+
+#sofar {
+    margin-bottom: 30px;
+}
+/* vids above */
+
+
+}
+
+
+@media(min-width:568px) {
+    .hamburgerSVG {
+        display: none;
+    }
+
+    #side-menu {
+        display: none;
+      
+    }
+
+    .contactForm {
+        width: 90%;
+    }
+
+    .monsterLogo {
+        display: block;
+
+    }
+
+}
+
+
+@media(min-width:600px) {
+    .newAlbum {
+        width: 90%;
+    }
+
+}
+
+@media(min-width:800px) {
+    .newAlbum {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24vw;
+    }
+
+    li {
+        padding: 1.1rem;
+    }
+
+    .h2OutNow {
+        font-size: 4.5rem;
+    }
+
+    #poroLogo {
+        width: 50px;
+    }
+
+    .contactForm {
+        width: 700px;
+        margin: auto;
+        margin-bottom: 90px; 
+    }
+    
+}
+
+@media(min-width:1050px) {
+    h1 {
+        font-size: 200px;
+    }
+
+    li {
+        padding: 2.25rem;
+    }
+
+    ul {
+        margin-bottom: 50px;
+    }
+} 
+
