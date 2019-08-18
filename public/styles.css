@@ -122,7 +122,7 @@ ul {
 
 /* Album Out */
 .newAlbum {
-    width: 90%;  
+    width: 85%;  
     margin-top: 3px;
 
 }
@@ -162,7 +162,7 @@ button:hover {
 }
 
 .img-container {
-    width: 800%;
+    width: 500%;
     position: relative;
     transition: 2s;
     -webkit-transition: left 2s;
@@ -174,7 +174,7 @@ button:hover {
     float: left;
     margin: 0px;
     padding: 0px;
-    width: 12.5%;
+    width: 20%;
 }
 
 .btn-container {
@@ -194,32 +194,32 @@ button:hover {
     left: 0%;
 }
 
-#slider-img-6:target ~ .img-container {
+/* #slider-img-6:target ~ .img-container {
+    left: -100%;
+} */
+
+#slider-img-2:target ~ .img-container {
     left: -100%;
 }
 
-#slider-img-2:target ~ .img-container {
+#slider-img-12:target ~ .img-container {
     left: -200%;
 }
 
-#slider-img-12:target ~ .img-container {
-    left: -300%;
-}
-
-#slider-img-11:target ~ .img-container {
+/* #slider-img-11:target ~ .img-container {
     left: -400%;
 }
 
 #slider-img-4:target ~ .img-container {
     left: -500%;
-}
+} */
 
 #slider-img-5:target ~ .img-container {
-    left: -600%;
+    left: -300%;
 }
 
 #slider-img-8:target ~ .img-container {
-    left: -700%;
+    left: -400%;
 }
 
 /* ON TOUR */
@@ -560,15 +560,16 @@ textarea {
 
 @media(min-width:600px) {
     .newAlbum {
-        width: 90%;
+        width: 75%;
     }
 
 }
 
 @media(min-width:800px) {
     .newAlbum {
-        width: 80%;
+        width: 60%;
     }
+
 
     h1 {
         font-size: 24vw;
@@ -605,6 +606,10 @@ textarea {
 
     ul {
         margin-bottom: 50px;
+    }
+
+    .newAlbum {
+        max-width: 800px;
     }
 } 
 
