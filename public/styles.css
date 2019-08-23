@@ -441,7 +441,7 @@ textarea {
 .submitbtn {
     width: 25%;
     max-width: 175px; 
-    min-width: 100px;
+    min-width: 125px;
     font-size: 22px;
     border-radius: 2px; 
     border-style: double;
@@ -494,6 +494,9 @@ textarea {
     .navbar-nav {
         display: none;
 
+    }
+    .submitbtn {
+        width: 90%;
     }
 #toggle:checked + #side-menu {
     display: block;
