@@ -22,12 +22,15 @@
     <!-- Nav and Band Name  -->
     <!-- Hamburger icon -->
     <div class="hamburgerNav">
-        <label for="toggle" class="hamburgerSVG">
-            <svg width="30" height="30">
+        <label for="toggle" id="hamburger" class="hamburgerSVG" onclick="changeToX(this)">
+            <!-- <svg width="30" height="30">
                 <path d="M0,5 30,5" stroke="#000" stroke-width="3" />
                 <path d="M0,14 30,14" stroke="#000" stroke-width="3" />
                 <path d="M0,23 30,23" stroke="#000" stroke-width="3" />
-            </svg>
+            </svg> -->
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </label>
         <input type="checkbox" id="toggle" />
 
@@ -35,8 +38,8 @@
         <!-- Slide Menu - Activated by svg hamburger -->
         <div id="side-menu">
             <a href="index.html">home</a>
-            <a href="index.html#tour">tour</a>
-            <a href="index.html#music">music</a>
+            <a href="index.html#tour" onclick="changeHamToX()">tour</a>
+            <a href="index.html#music" onclick="changeHamToX()">music</a>
             <a href="about.html">about</a>
             <a href="contact.html">contact</a>
             <a href="#">merch</a>

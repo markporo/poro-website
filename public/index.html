@@ -23,12 +23,16 @@
     <!-- Nav and Band Name  -->
     <!-- Hamburger icon -->
     <div class="hamburgerNav">
-        <label for="toggle" class="hamburgerSVG">
-            <svg width="30" height="30">
-                <path d="M0,5 30,5" stroke="#000" stroke-width="3" />
-                <path d="M0,14 30,14" stroke="#000" stroke-width="3" />
-                <path d="M0,23 30,23" stroke="#000" stroke-width="3" />
-            </svg>
+        <label for="toggle" id="hamburger" class="hamburgerSVG" onclick="changeToX(this)">
+            <!-- <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="3" class="line1"/>
+                <path d="M0,14 30,14" stroke="#000" stroke-width="3" class="line2" />
+                <path d="M0,14 30,14" stroke="#000" stroke-width="3" class="line3" />
+                <path d="M0,23 30,23" stroke="#000" stroke-width="3" class="line4" />
+            </svg> -->
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </label>
         <input type="checkbox" id="toggle" />
 
@@ -36,12 +40,13 @@
         <!-- Slide Menu - Activated by svg hamburger -->
         <div id="side-menu">
             <a href="index.html">home</a>
-            <a id="tourLink" href="#tour">tour</a>
-            <a id="musicLink" href="#music">music</a>
+            <a id="tourLink" href="#tour" onclick="changeHamToX()">tour</a>
+            <a id="musicLink" href="#music" onclick="changeHamToX()">music</a>
             <a href="about.html">about</a>
             <a href="contact.html">contact</a>
             <a href="#">merch</a>
         </div>
+
 
     </div>
 
@@ -50,7 +55,7 @@
     <!-- monster logo -->
     <div class="monsterLogo">
         <a href="index.html">
-            <img src="images/monsterLogo.png" alt="poro monster logo" id="poroLogo">
+            <img src="images/MonMononly.png" alt="poro monster logo" id="poroLogo">
         </a>
     </div>
 
@@ -71,7 +76,8 @@
     <content>
         <!-- Album Out -->
         <div>
-                <a href="https://song.link/album/i/1414662888"><img class="newAlbum" src="images/eyeshigherres.jpg" alt="Eyes Album image"></a>
+            <a href="https://song.link/album/i/1414662888"><img class="newAlbum" src="images/eyeshigherres.jpg"
+                    alt="Eyes Album image"></a>
         </div>
         <section>
             <h2 class="h2OutNow">EYES is OUT NOW!</h2>
@@ -79,37 +85,58 @@
         </section>
 
         <!-- Photo slide -->
-        <slider class="slider">
-            <span id="slider-img-10"></span>
-            <!-- <span id="slider-img-6"></span> -->
-            <span id="slider-img-2"></span>
-            <span id="slider-img-12"></span>
-            <!-- <span id="slider-img-11"></span> -->
-            <!-- <span id="slider-img-4"></span> -->
-            <span id="slider-img-5"></span>
-            <span id="slider-img-8"></span>
+        <div class="slider">
+            <div>
 
-            <div class="img-container">
-                <img src="images/10.jpg" alt="" class="slider-img">
-                <!-- <img src="images/6.jpg" alt="" class="slider-img"> -->
-                <img src="images/2.jpg" alt="" class="slider-img">
-                <img src="images/12.jpg" alt="" class="slider-img">
-                <!-- <img src="images/11.jpg" alt="" class="slider-img">
+
+
+
+                <span id="slider-img-10"></span>
+                <!-- <span id="slider-img-6"></span> -->
+                <span id="slider-img-2"></span>
+                <span id="slider-img-12"></span>
+                <!-- <span id="slider-img-11"></span> -->
+                <!-- <span id="slider-img-4"></span> -->
+                <span id="slider-img-5"></span>
+                <span id="slider-img-8"></span>
+
+                <div class="img-container">
+                    <img src="images/10.jpg" alt="" class="slider-img">
+                    <!-- <img src="images/6.jpg" alt="" class="slider-img"> -->
+                    <img src="images/2.jpg" alt="" class="slider-img">
+                    <img src="images/12.jpg" alt="" class="slider-img">
+                    <!-- <img src="images/11.jpg" alt="" class="slider-img">
                 <img src="images/4.jpg" alt="" class="slider-img"> -->
-                <img src="images/5.jpg" alt="" class="slider-img">
-                <img src="images/8.jpg" alt="" class="slider-img">
-            </div>
-            <div class="btn-container">
-                <a href="#slider-img-10" class="slider-btn"></a>
-                <!-- <a href="#slider-img-6" class="slider-btn"></a> -->
-                <a href="#slider-img-2" class="slider-btn"></a>
-                <a href="#slider-img-12" class="slider-btn"></a>
-                <!-- <a href="#slider-img-11" class="slider-btn"></a>
+                    <img src="images/5.jpg" alt="" class="slider-img">
+                    <img src="images/8.jpg" alt="" class="slider-img">
+
+                </div>
+
+
+                <div class="btn-container">
+                    <a href="#slider-img-10" class="slider-btn"></a>
+                    <!-- <a href="#slider-img-6" class="slider-btn"></a> -->
+                    <a href="#slider-img-2" class="slider-btn"></a>
+                    <a href="#slider-img-12" class="slider-btn"></a>
+                    <!-- <a href="#slider-img-11" class="slider-btn"></a>
                 <a href="#slider-img-4" class="slider-btn"></a> -->
-                <a href="#slider-img-5" class="slider-btn"></a>
-                <a href="#slider-img-8" class="slider-btn"></a>
+                    <a href="#slider-img-5" class="slider-btn"></a>
+                    <a href="#slider-img-8" class="slider-btn"></a>
+
+                    <!-- <div class="sideButtonContainer">
+                        
+                        <p class="sideSliderButtonLeft"> <a onclick="linkAndMoveToPhoto()" class="slidePhoto"> < </a>
+                        </p> 
+                        
+                        <p class="sideSliderButtonRight" onclick="moveSliderNext()">>
+                        </p> -->
+                    </div>
+                </div>
+
+
+
             </div>
-        </slider>
+        </div>
 
 
         <!-- On Tour -->
@@ -131,17 +158,20 @@
             <h2 class="h2Music">LISTEN</h2>
             <!-- eyes -->
             <div id="eyes" class="albums">
-                <a href="https://song.link/album/i/1414662888"><img src="images/eyes.jpg" alt="Listen to Eyes" class="albumCovers"></a>
+                <a href="https://song.link/album/i/1414662888"><img src="images/eyes.jpg" alt="Listen to Eyes"
+                        class="albumCovers"></a>
                 <a href="https://song.link/album/i/1414662888"></a><button class="listenButtons">Listen</button></a>
             </div>
             <!-- treat yourself -->
             <div id="ty" class="albums">
-                    <a href="https://song.link/album/i/1196032462"> <img src="images/treat-yourself.jpg" alt="Listen to Treat Yourself" class="albumCovers"></a>
+                <a href="https://song.link/album/i/1196032462"> <img src="images/treat-yourself.jpg"
+                        alt="Listen to Treat Yourself" class="albumCovers"></a>
                 <a href="https://song.link/album/i/1196032462"><button class="listenButtons">Listen</button></a>
             </div>
             <!-- Work Cover -->
             <div id="work" class="albums">
-                    <a href="https://song.link/i/1376959120"><img src="images/work.jpg" alt="Listen to Work" class="albumCovers"></a>
+                <a href="https://song.link/i/1376959120"><img src="images/work.jpg" alt="Listen to Work"
+                        class="albumCovers"></a>
                 <a href="https://song.link/i/1376959120"> <button class="listenButtons">Listen</button></a>
             </div>
         </div>
@@ -175,15 +205,15 @@
         <div id="socials">
             <!-- instagram -->
             <div class="social-links">
-               <a href="https://www.instagram.com/poromusic"> <i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/poromusic"> <i class="fab fa-instagram"></i></a>
             </div>
             <!-- facebook -->
             <div class="social-links">
-                    <a href="https://www.facebook.com/poromusic"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/poromusic"><i class="fab fa-facebook"></i></a>
             </div>
             <!-- twitter -->
             <div class="social-links">
-                    <a href="https://www.twitter.com/poromusic"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.twitter.com/poromusic"><i class="fab fa-twitter"></i></a>
             </div>
             <!-- spotify -->
             <div class="social-links">
@@ -198,9 +228,9 @@
     <!-- MailerLite Universal -->
     <script>
         (function (m, a, i, l, e, r) {
-        m['MailerLiteObject'] = e; function f() {
-            var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
-        }
+            m['MailerLiteObject'] = e; function f() {
+                var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+            }
             f.q = f.q || []; m[e] = m[e] || f.bind(f.q); m[e].q = m[e].q || f.q; r = a.createElement(i);
             var _ = a.getElementsByTagName(i)[0]; r.async = 1; r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
             _.parentNode.insertBefore(r, _);
