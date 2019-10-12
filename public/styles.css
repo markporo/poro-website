@@ -467,6 +467,15 @@ button:hover {
     color: white;
 }
 
+#footer-thankyou {
+    display: block;
+    position: static;
+    clear: both;
+    height: 100px; 
+    background-color: rgb(32, 30, 30);
+    color: white;
+}
+
 #emailSignupForm {
     position: relative;
     top: 30px;
@@ -511,6 +520,13 @@ h3 {
     margin-bottom: -10px;
     margin-left: 8%;
 }
+
+#h3-thankyou {
+    text-align: center;
+    margin-bottom: 20px; 
+    margin-left: 0;
+}
+
 
 .names p {
     text-align: left;
@@ -645,6 +661,12 @@ textarea {
     margin-bottom: 30px;
 }
 /* vids above */
+
+/* Thank You Page */
+#thankyou-img {
+    width: 45%; 
+    margin: 0;
+}
 
 
 }
