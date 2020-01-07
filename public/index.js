@@ -62,11 +62,11 @@ function linkAndMoveToPhoto() {
 
 
 
-$(document).ready(function () {
-    $('.hamburgerSVG').click(function () {
-        $(this).toggleClass('open');
-    });
-});
+// $(document).ready(function () {
+//     $('.hamburgerSVG').click(function () {
+//         $(this).toggleClass('open');
+//     });
+// });
 
 
 
