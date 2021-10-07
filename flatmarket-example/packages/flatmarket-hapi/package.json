@@ -1,0 +1,18 @@
+{
+  "name": "hapi-flatmarket",
+  "description": "A hapi plugin for Flatmarket.",
+  "version": "3.0.1",
+  "engines": {
+    "node": "4.x",
+    "npm": "2.x"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/christophercliff/flatmarket/tree/master/packages/flatmarket-hapi",
+  "main": "./lib/",
+  "dependencies": {
+    "boom": "^2.8.0",
+    "flatmarket-service": "^3.0.1",
+    "flatmarket-validation": "^3.0.1",
+    "joi": "^6.5.0"
+  }
+}
